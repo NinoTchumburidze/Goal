@@ -1,0 +1,326 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+hr{
+    width:500px;
+    height:1px;
+}
+
+#board1 .tile:nth-child(7n+1) {
+    /* Styles for the selected tiles in the first column */
+    background-color: rgb(200, 89, 212);
+}
+
+
+
+#arrow{
+    display:none;
+    width:40px;
+    height:40px;
+    background: url("../photo/arrow.png") center/cover;
+    top:180px;
+    left:710px;
+    position:absolute;
+}
+
+.multiplier{
+    width:30px;
+    height:15px;
+    border-radius:5px;
+    background-color:rgb(142, 107, 150);
+    border: 2px solid;
+    font-weight:bold;
+    font-size:13;
+}
+
+#board2{
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    width:500px;
+    height:25px;
+    top:420px;
+    left:440px;
+    position:absolute;
+    border-radius:15px;
+    gap:5px;
+}
+
+#board1{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width:500px;
+    height:280px;
+    top:120px;
+    left:420px;
+    position:absolute;
+    gap:5px;
+    border-radius:15px;
+}
+
+.tile{
+    width: 60px; 
+    height: 60px;
+    border: 2px solid;
+    color:rgb(152, 94, 185);
+    background-color: rgb(200, 89, 212);
+    border-radius:5px;
+
+}
+
+#title{
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#type{
+    position:absolute;
+    top:155px;
+    left:145px;
+    width:160px;
+    height:25px;
+    background-color:rgb(245, 196, 234);
+    border-radius:5px;
+}
+
+#manual{
+    width:75px;
+    height:25px;
+    background-color:rgb(222, 167, 237);
+    border-radius:5px;
+
+}
+
+#auto{
+    width:75px;
+    height:25px;
+    background-color:rgb(222, 167, 237);
+    border-radius:5px;
+}
+
+#board {
+    width: 980px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background: rgb(149, 73, 188); /* Background color */
+    background: url("../photo/bg2.jpg") center/cover; /* Background image */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#button-container {
+    position: absolute;
+    top: -15px; /* Adjust the top position to align with bet-field */
+    left: 130px; /* Adjust the left position to push it to the right of bet-field */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px; /* Adjust gap as needed */
+    
+}
+#button-container button {
+    margin-right: 5px; /* Adjust margin as needed */
+    width:75px;
+    color:rgb(116, 60, 143);
+
+}
+
+#circleElement1 {
+    width: 25px; /* Adjust the width as needed */
+    height: 25px; /* Adjust the height as needed */
+    top:8px;
+    left:5px;
+    position:absolute;
+    background-color: rgb(254, 237, 255);
+    border-radius: 50%;
+    font-size:16;
+}
+
+#circleElement2 {
+    width: 25px; /* Adjust the width as needed */
+    height: 25px; /* Adjust the height as needed */
+    top:8px;
+    left:100px;
+    position:absolute;
+    background-color: rgb(254, 237, 255);
+    border-radius: 50%;
+    font-size:16;
+}
+
+
+#amount{
+    font-size:16;
+    left:35px;
+    top:10px;
+    position:absolute;
+    font-weight:bold;
+
+    width:55px;
+    height:20px;
+    background-color: rgb(245, 196, 234);
+    
+}
+
+#bet-field{
+    width:125px;
+    height:35px;
+    border-radius:5px;
+    position:absolute;
+    top:32px;
+    left:22px;
+    background-color:rgb(225, 176, 214);
+    color:rgb(92, 22, 129);
+    font-size:13;
+    
+}
+
+#amount-txt{
+    position: absolute;
+    top:2px;
+    left:30px;
+    font-size: 13px;
+    color:rgb(149, 73, 188);
+
+}
+
+#bet-amount{
+    width:320px;
+    height:75px;
+    border-radius:10px;
+    position:absolute;
+    bottom:240px;
+    left:70px;
+    background-color:rgb(242, 208, 254);
+    color:rgb(92, 22, 129);
+    font-size:13;
+    
+}
+
+#field-size{
+    width:320px;
+    height:70px;
+    border-radius:10px;
+    position:absolute;
+    bottom:160px;
+    left:70px;
+    background-color:rgb(219, 143, 238);
+    color:rgb(255, 255, 255);
+    font-size:13;
+    font-weight: bold;
+}
+
+#big{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 197px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(92, 22, 129);
+}
+
+#medium{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 107px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(92, 22, 129);
+}
+
+#small{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 17px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(92, 22, 129);
+}
+
+#bet{
+    width: 320px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 100px;
+    left: 70px;
+    background-color:rgb(245, 196, 234);
+    color:rgb(92, 22, 129);
+    font-weight:bold;
+}
+
+#left-up-text {
+    position: absolute;
+    top:0px;
+    left:20px;
+    font-size: 16px;
+    font-weight: bold;
+    color:rgb(250, 241, 255);
+}
+
+#credit-text{
+    position: absolute;
+    top:0px;
+    left:50%;
+    transform: translateX(-100%);
+    font-size: 16px;
+    font-weight: bold;
+    color:rgb(239, 224, 248);
+}
+
+#money-amount{
+    position: absolute;
+    top:0px;
+    left:50%;
+    transform: translateX(+10%);
+    font-size: 16px;
+    font-weight: bold;
+    color:rgb(244, 225, 255);
+}
+#rules{
+    position: absolute;
+    top:0px;
+    left:87%;
+    font-size: 14px;
+    font-weight: bold;
+    color:rgb(247, 231, 255);
+}
+
+#line{
+    width: 980px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    background-color:darkslateblue; /* Background color */
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#bet {
+    width: 320px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 100px;
+    left: 70px;
+    background-color:rgb(179, 80, 207);
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+}
