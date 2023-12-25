@@ -190,7 +190,7 @@ function drawAuto(){
     //this is start button. it has two function: starting again and putting bombs randomly on map.
     start.addEventListener("click", function(){
         if(!played){
-        startfunction();
+            startfunction();
         }else{
             //starting again
             played = false;
@@ -218,8 +218,8 @@ function drawAuto(){
 function startfunction(){
     //betting
     
-        credit = credit - betAmount;
-        document.getElementById("money-amount").innerText = credit.toFixed(2) + "$";
+    credit = credit - betAmount;
+    document.getElementById("money-amount").innerText = credit.toFixed(2) + "$";
 
     let won = true;
 
